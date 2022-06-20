@@ -7,11 +7,7 @@ module "vcn" {
   source  = "oracle-terraform-modules/vcn/oci"
 }
 
-# General OCI parameters
-variable "compartment_id" {
-  description = "The compartment id where to create all resources."
-  type        = string
-}
+
 
 resource "oci_core_vcn" "appdev_vcn" {
     #Required
