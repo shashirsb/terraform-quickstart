@@ -21,9 +21,9 @@ resource "oci_core_vcn" "appdev_vcn" {
    
 }
 
-output "vcn_id" {
+/* output "vcn_id" {
   description = "VCN id details"
-  value       = oci_core_vcn.appdev_vcn.vcn_id
-}
+  value       = oci_core_vcn.appdev_vcn.id
+} */
 
 
