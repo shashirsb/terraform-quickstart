@@ -31,7 +31,7 @@ module "network" {
   # general oci parameters
   compartment_id = var.compartment_id
   subnets      = var.subnets
-  vcn_id       = module.vcn.vcn_id
+  vcn_id       = output.vcn_id
   vcn_cidrs    = var.vcn_cidr_block
 
 
