@@ -16,6 +16,6 @@ variable "subnets" {
 }
 
 variable "vcn_cidrs" {
-    type = string
+    type = list(string)
 }
 
