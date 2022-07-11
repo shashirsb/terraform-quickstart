@@ -6,7 +6,7 @@ provider "oci" {
 module "vcn" {
   source  = "oracle-terraform-modules/vcn/oci"
   compartment_id = var.compartment_id
-   vcn_cidrs  = var.vcn_cidrs
+   vcn_cidrs  = ["10.2.0.0/16"]
    vcn_name = var.vcn_display_name
 }
 
