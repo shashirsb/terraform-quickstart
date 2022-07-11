@@ -25,6 +25,7 @@ module "network" {
   compartment_id = var.compartment_id
   subnets        = var.subnets
   vcn_id         = module.vcn.vcn_id
+  vcn_cidrs      = var.vcn_cidrs
 
   depends_on = [
     module.vcn
