@@ -15,7 +15,4 @@ variable "subnets" {
   type = map(any)
 }
 
-variable "vcn_cidrs" {
-  description = "The list of IPv4 CIDR blocks the VCN will use."
-  type        = list(string)
-}
+

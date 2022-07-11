@@ -15,10 +15,6 @@ variable "vcn_display_name" {
   type        = string
 }
 
-variable "vcn_id" {
-  description = "vcn string containing ocid."
-  type        = string
-}
 
 
 variable "subnets" {
