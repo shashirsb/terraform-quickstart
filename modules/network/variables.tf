@@ -15,4 +15,7 @@ variable "subnets" {
   type = map(any)
 }
 
+variable "vcn_cidrs" {
+    type = string
+}
 
