@@ -4,10 +4,6 @@ variable "compartment_id" {
   type        = string
 }
 
-variable "vcn_cidr_block" {
-  description = "The compartment id where to create all resources."
-  type        = string
-}
 
 
 variable "vcn_display_name" {
