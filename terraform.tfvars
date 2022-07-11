@@ -6,4 +6,4 @@ subnets = {
   bastion  = { netnum = 0, newbits = 14 }
 }
 
-vcn_id       = module.vcn.vcn_id
+
