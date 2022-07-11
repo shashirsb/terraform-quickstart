@@ -1,4 +1,4 @@
-resource "oci_core_subnet" "cp" {
+resource "oci_core_subnet" "bastion" {
   
   #Required
   cidr_block                 = local.bastion_subnet
