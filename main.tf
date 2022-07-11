@@ -14,7 +14,7 @@ resource "oci_core_vcn" "appdev_vcn" {
     compartment_id = var.compartment_id
 
     #Optional   
-    cidr_block = var.vcn_cidr_block    
+    cidr_block = var.vcn_cidrs    
     display_name = var.vcn_display_name
    
 }

@@ -3,7 +3,7 @@ vcn_cidrs     = ["10.2.0.0/16"]
 vcn_display_name = "appdev-workshop-vcn"
 
 subnets = {
-  bastion  = { netnum = 0, newbits = 14 }
+  bastion  = { netnum = 0, newbits = 13 }
 }
 
 
