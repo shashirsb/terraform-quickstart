@@ -14,7 +14,7 @@ module "vcn" {
 
 output "vcn_id" {
   description = "VCN id details"
-  value       = oci_core_vcn.appdev_vcn.id
+  value       = module.vcn.id
 }
 
 # additional networking for oke
