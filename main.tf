@@ -6,18 +6,11 @@ provider "oci" {
 module "vcn" {
   source  = "oracle-terraform-modules/vcn/oci"
   compartment_id = var.compartment_id
+   vcn_cidrs  = element(var.vcn_cidrs, 0)
+   vcn_name = var.vcn_display_name
 }
 
 
-resource "oci_core_vcn" "appdev_vcn" {
-    #Required
-    compartment_id = var.compartment_id
-
-    #Optional   
-    cidr_block = element(var.vcn_cidrs, 0)    
-    display_name = var.vcn_display_name
-   
-}
 
 output "vcn_id" {
   description = "VCN id details"

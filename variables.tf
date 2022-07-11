@@ -4,6 +4,10 @@ variable "compartment_id" {
   type        = string
 }
 
+variable "vcn_cidrs" {
+  description = "The list of IPv4 CIDR blocks the VCN will use."
+  type        = list(string)
+}
 
 
 variable "vcn_display_name" {
@@ -12,13 +16,8 @@ variable "vcn_display_name" {
 }
 
 
-
 variable "subnets" {
   description = "parameters to cidrsubnet function to calculate subnet masks within the VCN."
   type = map(any)
 }
 
-variable "vcn_cidrs" {
-  description = "The list of IPv4 CIDR blocks the VCN will use."
-  type        = list(string)
-}
