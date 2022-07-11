@@ -6,7 +6,7 @@ provider "oci" {
 module "vcn" {
   source  = "oracle-terraform-modules/vcn/oci"
   compartment_id = var.compartment_id
-   vcn_cidrs  = element(var.vcn_cidrs, 0)
+   vcn_cidrs  = var.vcn_cidrs
    vcn_name = var.vcn_display_name
 }
 
@@ -14,7 +14,7 @@ module "vcn" {
 
 output "vcn_id" {
   description = "VCN id details"
-  value       = module.vcn.id
+  value       = module.vcn.vcn_id
 }
 
 # additional networking for oke
